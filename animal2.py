@@ -252,3 +252,23 @@ class mahiha(mohredaran):
         return self.tedadpolak
     def gettedadebale(self):
         return self.tedadebale
+
+
+
+class kose(mahiha):
+    def __init__(self, tedadedandan, sheklesar, tedadezakhmha, omgh, speed, tedadostekhan, omghab, hafeze, tedadpolak,
+                 tedadebale, tedadmohre, vazn, arz, sen):
+        super().__init__(tedadostekhan, omghab, hafeze, tedadpolak, tedadebale, tedadmohre, vazn, arz, sen)
+        self.tedadedandan=tedadedandan#int
+        self.sheklesar=sheklesar#str
+        self.tedadezakhmha=tedadezakhmha#int
+        self.omgh=omgh#int
+        self.speed=speed#int
+    def gettedadedandan(self):
+        return self.tedadedandan
+    def getsheklesar(self):
+        return self.sheklesar
+    def gettedadezakhmha(self):
+        return self.tedadezakhmha
+    def getspeed(self):
+        return self.speed
