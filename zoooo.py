@@ -14,3 +14,18 @@ class akvariom:
     def getfisheslist(self):
         for i in self.fishes:
             print(i)
+
+
+class ghafas:
+    def __init__(self,arzgh,tolgh,ertefagh):
+        self.animals=[]
+        self.arzgh=arzgh
+        self.tolgh=tolgh
+        self.ertefagh=ertefagh
+    def addanimal(self,animal:pestandaran):#agrition
+        self.animals.append(animal)
+    def gethagm(self):#polimorism
+        return arzgh*tolgh*ertefagh
+    def getlistanimals(self):
+        for i in self.animals:
+            print(i)
