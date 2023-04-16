@@ -214,3 +214,41 @@ class shir(chaharpa):
         return self.tedadazagale
     def speak(self): #estefade az polimorism
         return "kho kho kho !"
+
+
+
+class mahiha(mohredaran):
+    def __init__(self,tedadostekhan,omghab,hafeze,tedadpolak,tedadebale,tedadmohre, vazn, arz, sen):
+        super().__init__(tedadmohre, vazn, arz, sen)
+        self.meghdarpashm=meghdarpashm#int
+        self.omghab=omghab#int
+        self.hafeze=hafeze#str
+        self.tedadpolak=tedadpolak#int
+        self.tedadebale=tedadebale#int
+        self.tedadostekhan=tedadostekhan#int
+
+    # in metod ha be dalil abstrak bodan class asli(mohredaran) dar class mahiha ham miayad
+    def harekat(self):
+        print("move")
+
+    def afzayeshsen(self):
+        self.sen += 1
+
+    def getarz(self):
+        return self.arz
+
+    def khab(self):
+        print("sleep zzz!")
+        self.iskhab = True
+
+    def bidar(self):
+        self.iskhab = False
+
+    def gettedadostekhan(self):
+        return self.tedadostekhan
+    def getomghab(self):
+        return self.omghab
+    def gettedadpolak(self):
+        return self.tedadpolak
+    def gettedadebale(self):
+        return self.tedadebale
