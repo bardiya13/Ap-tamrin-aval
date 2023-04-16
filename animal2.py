@@ -131,3 +131,24 @@ class ensan(dopa):
         return f"famili man {self.famili} hast"
     def speak(self):
         return "language!"# estefadeh az polymorism
+
+
+class meymon(dopa):
+    def __init__(self, ertefaparesh, rang, ghazayemoredalaghe, damyebadan, toledast, tabaghezangire, zistgah,
+                  meghdarghazayemoredniyaz, tolgam, hagmemo, mahalezendegi, toleomr, toledom, dandan,
+                 tedadmohre, vazn, arz, sen):
+        super().__init__(tabaghezangire, zistgah, meghdarghazayemoredniyaz, tolgam, hagmemo,
+                         mahalezendegi, toleomr, toledom, dandan, tedadmohre, vazn, arz, sen)
+        self.ertefaparesh=ertefaparesh #type vorodi str
+        self.rang=rang# type vorodi str
+        self.ghazayemoredalaghe=ghazayemoredalaghe# type vorodi str
+        self.damyebadan=damyebadan# type voroodi int
+        self.toledast=toledast# type vorodi int
+    def getrang(self):
+        return f"range man {self.rang} hast"
+    def gettoledast(self):
+        return f"tole dast man {self.toledast}"
+    def getertefaparesh(self):
+        return f"ertefae paresh man {self.ertefaparesh} hast"
+    def speak(self):#estefade az polymorism
+        return "va va va va!"
