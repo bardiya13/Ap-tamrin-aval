@@ -173,3 +173,25 @@ class chaharpa(pestandaran):
         return self.binayi
     def getkalerimasrafi(self):
         return self.kalerimasrafi
+
+
+
+
+class sag (chaharpa):
+    def __init__(self, name, kholosnejad, rizeshmo, ezafevazn, age, arzesh, karayi, kalerimasrafi, binayi, sheklpange,
+                 hagmemo, mahalezendegi, toleomr, toledom, dandan, tedadmohre, vazn, arz, sen):
+        super().__init__(arzesh, karayi, kalerimasrafi, binayi, sheklpange, hagmemo, mahalezendegi, toleomr, toledom,
+                         dandan, tedadmohre, vazn, arz, sen)
+        self.name=name#str
+        self.kholosnejad=kholosnejad#str
+        self.rizeshmo=rizeshmo#bolian
+        self.ezafevazn=ezafevazn#int
+        self.age=age#int
+    def getage(self):
+        return f"sene man {self.age} hast"
+    def getkholosenejad(self):
+        return self.kholosnejad
+    def getname(self):
+        return f"my name is {self.name}"
+    def speak(self):# estefade az polymorism
+        return "hap hap !"
