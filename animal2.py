@@ -89,3 +89,24 @@ class dopa(pestandaran):
         return f"zistgahe man {self.zistgah} hast"
     def tedad_mandeha_az_dopa(self):
         return f"{self.tedade_pa} az dopa vogod darad"
+
+
+class parande(dopa):
+    def __init__(self, ertefaparvaz, soratparvaz, gone, tolebal, zamanparvaz, tabaghezangire, zistgah,
+                 meghdarghazayemoredniyaz, tolgam, hagmemo, mahalezendegi, toleomr, toledom, dandan, tedadmohre, vazn,
+                 arz, sen):
+        super().__init__(tabaghezangire, zistgah,meghdarghazayemoredniyaz, tolgam, hagmemo,
+                         mahalezendegi, toleomr, toledom, dandan, tedadmohre, vazn, arz, sen)
+        self.ertefaparvaz=ertefaparvaz
+        self.soratparvaz=soratparvaz
+        self.gone=gone
+        self.tolebal=tolebal
+        self.zamanparvaz=zamanparvaz
+    def getertefaeparvaz(self):
+        return f"man {self.ertefaparvaz} balaye sathe zamin parvaz mikonam"
+    def getgone(self):
+        return f"man az gone {self.gone} hastam"
+    def gettolebal(self):
+        return f"tole bal man {self.tolebal} hast"
+    def speak(self):#polymorism
+        return "ghar ghar!"
