@@ -110,3 +110,24 @@ class parande(dopa):
         return f"tole bal man {self.tolebal} hast"
     def speak(self):#polymorism
         return "ghar ghar!"
+
+
+class ensan(dopa):
+    def __init__(self, pol, sathtahsilat, esm, famili, tedadbache, tabaghezangire, zistgah,
+                 meghdarghazayemoredniyaz, tolgam, hagmemo, mahalezendegi, toleomr, toledom, dandan, tedadmohre, vazn,
+                 arz, sen):
+        super().__init__(tabaghezangire, zistgah, meghdarghazayemoredniyaz, tolgam, hagmemo,
+                         mahalezendegi, toleomr, toledom, dandan, tedadmohre, vazn, arz, sen)
+        self.pol=pol
+        self.sathtahsilat=sathtahsilat# type vorodi str ast
+        self.esm=esm# type vorodi str ast
+        self.famili=famili# type vorodi str ast
+        self.tedadbache=tedadbache
+    def getpol(self):
+        return f"man {self.pol} daram"
+    def getesm(self):
+        return f"esme man {self.esm} hast"
+    def getfamili(self):
+        return f"famili man {self.famili} hast"
+    def speak(self):
+        return "language!"# estefadeh az polymorism
