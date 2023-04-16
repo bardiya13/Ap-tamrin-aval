@@ -152,3 +152,24 @@ class meymon(dopa):
         return f"ertefae paresh man {self.ertefaparesh} hast"
     def speak(self):#estefade az polymorism
         return "va va va va!"
+
+
+class chaharpa(pestandaran):
+    def __init__(self, arzesh, karayi, kalerimasrafi, binayi, sheklpange, hagmemo, mahalezendegi, toleomr, toledom,
+                 dandan, tedadmohre, vazn, arz, sen):
+        super().__init__(hagmemo, mahalezendegi, toleomr, toledom, dandan, tedadmohre, vazn, arz, sen)
+        self.arzesh=arzesh
+        self.karayi=karayi
+        self.kalerimasrafi=kalerimasrafi
+        self.binayi=binayi
+        self.sheklpange=sheklpange
+    def getarzesh(self):
+        return self.arzesh
+    def getkarayi(self):
+        return self.karayi
+    def getsheklpange(self):
+        return f"shekle pange man {self.sheklpange} hast"
+    def getbinayi(self):
+        return self.binayi
+    def getkalerimasrafi(self):
+        return self.kalerimasrafi
