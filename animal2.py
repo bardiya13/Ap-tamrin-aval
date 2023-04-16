@@ -70,3 +70,22 @@ class pestandaran(mohredaran):
         return f"dandanhaye man {self.dandan} hast"
     def getdom(self):
         return f"andaze dome man {self.toledom} hast"
+
+class dopa(pestandaran):
+    def __init__(self, tabaghezangire, zistgah,  meghdarghazayemoredniyaz, tolgam, hagmemo, mahalezendegi,
+                 toleomr, toledom, dandan, tedadmohre, vazn, arz, sen):
+        super().__init__(hagmemo, mahalezendegi, toleomr, toledom, dandan, tedadmohre, vazn, arz, sen)
+        self.tabaghezangire=tabaghezangire
+        self.zistgah=zistgah
+        self.tedade_pa=2#in moteghayer az ghabl adadi sabet ast
+        self.meghdarghazayemoredniyaz=meghdarghazayemoredniyaz
+        self.tolgam=tolgam
+
+    def get_tedad_ghadam(self,masafatharekat):
+        return f"{masafatharekat/self.tolgam}"#barye in tabe moteghayer gadid niyaz ast ke karbar behemon bede
+    def get_tabaghe_ghazayi(self,name):#barye in tabe moteghayer gadid niyaz ast ke karbar behemon bede
+        return f"{name} dar tabaghe {self.tabaghezangire} hastam"
+    def get_zistgah(self):
+        return f"zistgahe man {self.zistgah} hast"
+    def tedad_mandeha_az_dopa(self):
+        return f"{self.tedade_pa} az dopa vogod darad"
