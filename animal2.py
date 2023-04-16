@@ -195,3 +195,22 @@ class sag (chaharpa):
         return f"my name is {self.name}"
     def speak(self):# estefade az polymorism
         return "hap hap !"
+
+class shir(chaharpa):
+    def __init__(self, ghodrat, tonseda, tolenakhon, tedadazagale, meghdarpashm, arzesh, karayi, kalerimasrafi, binayi,
+                 sheklpange, hagmemo, mahalezendegi, toleomr, toledom, dandan, tedadmohre, vazn, arz, sen):
+        super().__init__(arzesh, karayi, kalerimasrafi, binayi, sheklpange, hagmemo, mahalezendegi, toleomr, toledom,
+                         dandan, tedadmohre, vazn, arz, sen)
+        self.ghodrat=ghodrat#int
+        self.tonseda=tonseda#int
+        self.tolenakhon=tolenakhon#int
+        self.tedadazagale=tedadazagale#int
+        self.meghdarpashm=meghdarpashm#int
+    def getniro(self):
+        return self.ghodrat
+    def gettonseda(self):
+        return self.tonseda
+    def gettedadazagale(self):
+        return self.tedadazagale
+    def speak(self): #estefade az polimorism
+        return "kho kho kho !"
