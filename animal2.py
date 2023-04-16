@@ -272,3 +272,21 @@ class kose(mahiha):
         return self.tedadezakhmha
     def getspeed(self):
         return self.speed
+
+class mahigiyahkhar(mahiha):
+    def __init__(self, giyah_masrafi, meghdar_fozolat, damaye_ab, oxsigene_moredeniyaz, zarabane_ghalb, tedadostekhan,
+                 omghab, hafeze, tedadpolak, tedadebale, tedadmohre, vazn, arz, sen):
+        super().__init__(tedadostekhan, omghab, hafeze, tedadpolak, tedadebale, tedadmohre, vazn, arz, sen)
+        self.giyah_masrafi=giyah_masrafi#str
+        self.meghdar_fozolat=meghdar_fozolat#int
+        self.damaye_ab=damaye_ab#int
+        self.oxsigene_moredeniyaz=oxsigene_moredeniyaz#int
+        self.zarabane_ghalb=zarabane_ghalb#int
+    def getzarabane_ghalb(self):
+        return self.zarabane_ghalb
+    def get_meghdar_fozolat(self):
+        return self.meghdar_fozolat
+    def get_giyah_masrafi(self):
+        return self.giyah_masrafi
+    def get_damaye_ab(self):
+        return self.damaye_ab
